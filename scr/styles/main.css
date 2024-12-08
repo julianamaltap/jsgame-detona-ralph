@@ -1,0 +1,64 @@
+.conteiner {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: url("../images/3134834.jpg");
+    background-size: cover;
+}
+
+/* flex-direction: column = os itens são exibidos em uma coluna, de cima para baixo  */
+/* display: flex = colocar elementos lado a lado */
+/* justify-content: space-evenly = ítens distribuídos igualmente com o mesmo espaçamento entre eles */
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90px;
+    width: 100%;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding-top: 5px;
+}
+
+.menu-time,.menu-score{
+    display: flex;
+    align-items: center;
+}
+
+.menu-time,.menu-score > h2:nth-child(1) {
+    padding-right: 10px;
+}
+
+.menu-lives {
+    display: flex;
+    align-items: center;
+}
+
+.menu-lives > img {
+    width: 60px;
+    padding-right: 10px;
+}
+/* display: flex = colocou as três div irmãs lado a lado */
+.panel {
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square {
+    height: 150px;
+    width: 150px;
+    border: 1px solid #50163a;
+    background-color: #fd3cff;
+}
+
+/* Esta classe é para destacar a caixa em que o personagem aparecer */
+.enemy {
+    background-image: url("../images/jinks.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #366ec8;
+}
